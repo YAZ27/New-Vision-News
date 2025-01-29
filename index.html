@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SV2030News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>أحدث الأخبار والتقارير الحصرية</h1>
+    </header>    
+
+    <!DOCTYPE html>
+    <html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>قائمة جانبية</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: #f5f5f5;
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* 🔹 زر القائمة (☰) */
+            .menu-icon {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                font-size: 30px;
+                cursor: pointer;
+                z-index: 1001;
+                background: white;
+                border-radius: 5px;
+                padding: 5px 10px;
+                border: 1px solid #ccc;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+    
+            .menu-icon:hover {
+                background: #ddd;
+            }
+    
+            /* 🔹 القائمة الجانبية */
+            .sidebar {
+                position: fixed;
+                right: -250px;
+                top: 0;
+                width: 250px;
+                height: 100%;
+                background: #333;
+                color: white;
+                padding-top: 60px;
+                transition: 0.3s;
+            }
+    
+            .sidebar a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                padding: 15px;
+                border-bottom: 1px solid #444;
+                text-align: center;
+            }
+    
+            .sidebar a:hover {
+                background: #555;
+            }
+    
+            .close-btn {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                font-size: 25px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- زر القائمة (☰) -->
+        <div class="menu-icon" onclick="openMenu()">☰</div>
+    
+        <!-- القائمة الجانبية -->
+        <div class="sidebar" id="sidebar">
+            <span class="close-btn" onclick="closeMenu()">×</span>
+            <a href="index.html">🏠 الصفحة الرئيسية</a>
+            <a href="news.html">📰 الأخبار</a>
+            <a href="contact.html">📞 تواصل معنا</a>
+            <a href="about.html">ℹ️ حول الموقع</a>
+        </div>
+    
+    
+        <script>
+            function openMenu() {
+                document.getElementById("sidebar").style.right = "0";
+            }
+    
+            function closeMenu() {
+                document.getElementById("sidebar").style.right = "-250px";
+            }
+        </script>
+    
+    </body>
+    </html>    
+
+    <main>
+        <section class="news">
+            <article>
+                <img src="https://i.ibb.co/svVcGv2R/med2030.jpg" alt="حفل فعاليات برنامج رؤية 2030">
+                <div class="news-content">
+                    <h2>تركي ال الشيخ يعلن انطلاق مشروع على خطاه"</h2>
+                    <p>أقيمت فعالية ضخمة ضمن برنامج رؤية 2030، بحضور شخصيات بارزة ومشاركة العديد من الجهات الحكومية.</p>
+                    <a href="#">اقرأ المزيد</a>
+                </div>
+            </article>            
+        
+            <article>
+                <img src="news2.jpg" alt="صورة الخبر الثاني">
+                <div class="news-content">
+                    <h2>عنوان الخبر الثاني</h2>
+                    <p>هذا هو وصف مختصر للخبر الثاني...</p>
+                    <a href="#">اقرأ المزيد</a>
+                </div>
+            </article>
+        
+        <article>
+            <img src="blabla" alt="صورة الخبر الثالث">
+            <div class="news-content">
+                    <h2>عنوان الخبر الثالث</h2>
+                    <p>هذا هو وصف مختصر للخبر الثالث...</p>
+                    <a href="#">اقرا المزيد</a>
+            </div>
+        </article>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة للطالب يزيد المخلفي &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
